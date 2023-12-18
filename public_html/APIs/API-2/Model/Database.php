@@ -1,8 +1,12 @@
 <?php
-require_once(__DIR__."/../inc/config.php");
+
+//require_once(__DIR__."/../inc/config.php");
 
 //$db = new Database();
-//cho json_encode($db->select ("Select * from users LIMIT ?", ['i', 2]));
+//echo json_encode($db->select ("Select * from users LIMIT ?", ['i', 2]));
+//echo "<br>" . json_encode(explode( '/', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)));e
+
+
 class Database
 {
     protected $connection = null;

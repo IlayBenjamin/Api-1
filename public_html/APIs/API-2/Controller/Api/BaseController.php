@@ -17,7 +17,8 @@ class BaseController
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $uri = explode( '/', $uri );
-        return $uri;
+
+        return $uri; 
     }
     /** 
 * Get querystring params. 
@@ -26,7 +27,8 @@ class BaseController
 */
     protected function getQueryStringParams()
     {
-        return parse_str($_SERVER['QUERY_STRING'], $query);
+         parse_str($_SERVER['QUERY_STRING'], $query);
+         return $query;
     }
     /** 
 * Send API output. 
